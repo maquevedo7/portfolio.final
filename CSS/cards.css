@@ -1,0 +1,111 @@
+/* CARDS PROJECT *//* CARDS PROJECT *//* CARDS PROJECT *//* CARDS PROJECT *//* CARDS PROJECT */
+
+.projects-content {
+
+    background-color: rgb(28, 10, 44);
+    display: inline;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3% 30%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+
+}
+
+.card {
+
+    width: 250px;
+    border-radius: 20px;
+    margin: 1.5em;
+    padding: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(194, 129, 255, 0.24);
+
+}
+
+.card-img {
+
+    width: 100%;
+    height: 150px;
+    background-image: url('https://i.ibb.co/8BqhBMc/image-3-adobespark.png');
+    background-size: cover; /* Escala la imagen al mayor tamaño posible sin estirarla.  */
+
+}
+
+.card-title {
+
+    padding: 20px;
+
+}
+
+.projects-links {
+
+    display: flex;
+    justify-content: space-evenly; /* espacios equitativos en los íconos */
+
+}
+
+
+.projects-links a {
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+.projects-links i {
+
+    font-size: 1.5em;
+
+}
+
+.project-details-content {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+
+}
+
+.card .project-details {
+
+    margin: 0 auto;
+    margin: .7em;
+    width: 75%;
+
+
+}
+
+.card .project-details a {
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+
+}
+
+@media only screen and (max-width: 760px) {
+
+    .projects-content {
+
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .projects-content {
+
+        grid-template-columns: 100%;
+
+    }
+
+}

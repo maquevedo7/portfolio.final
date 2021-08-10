@@ -1,0 +1,182 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.nav-bar {
+
+    background-color: rgb(28, 10, 44);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25em;
+    position: fixed;
+
+}
+
+.nav-bar img {
+
+    width: 100px;
+    height: 100px;
+
+}
+
+.nav-bar-elem {
+    
+    list-style: none;
+    display: flex; /*alinea items menu*/
+    width: 50%;
+    font-size: 1.25em;
+    align-items: center;
+    justify-content: space-around; /*deja espacio entre los elementos*/
+    cursor: pointer;
+
+}
+
+
+.nav-bar-elem a {
+  
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+.nav-bar-elem a:hover, .mini-nav-bar a:hover{
+
+    background-color: rgba(255, 101, 255, 0.815);
+    color: rgb(0, 0, 0);
+    transition: ease     0.1s;
+    border-radius: 20px;
+
+}
+
+.nav-bar-elem .nbe-active, .mini-bar .nbe-active {
+
+    color:rgba(255, 80, 217, 0.767)
+
+}
+
+.icon {
+
+    margin-right: 5px;
+
+}
+
+/* MINI BARRA *//* MINI BARRA *//* MINI BARRA *//* MINI BARRA *//* MINI BARRA *//* MINI BARRA *//* MINI BARRA *//* MINI BARRA *//* MINI BARRA */
+
+.mini-bar {
+
+    background-color: rgb(28, 10, 44);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25em;
+    position: fixed;
+
+}
+
+.mini-bar img {
+
+    width: 10%;
+
+}
+
+.mini-nav-bar {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+.mini-nav-bar a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.mini-nav-bar .icon {
+
+    padding: 10px;
+
+}
+
+@media (max-width: 768px) {
+
+    .nav-bar {
+
+        display: none;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .mini-bar {
+
+        display: none;
+
+    }
+
+}
+
+/* CONTENTS HEAD *//* CONTENTS HEAD *//* CONTENTS HEAD *//* CONTENTS HEAD *//* CONTENTS HEAD *//* CONTENTS HEAD */
+
+.content-head{
+
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5%;
+
+}
+
+.divider {
+
+    height: 5px;
+    width: 60px;
+    background-color: rgba(255, 101, 255);
+    margin-top: 10px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+
+}
+
+@media (max-width: 768px) {
+
+    .content-head{
+
+        padding: 2em;
+        font-size: 10px;
+        text-align: center;
+        border-bottom: 5px solid rgba(255, 101, 255);
+        display: flex;
+        width: 100%;
+
+    }
+
+    .divider {
+
+        display: none;
+
+    }
+
+}
+
+
+
+
